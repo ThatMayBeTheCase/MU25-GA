@@ -1,0 +1,15 @@
+name: Github Actions Demo
+
+on:
+  push:
+    branches: ["main", "dev"]
+
+
+jobs:
+  demo:
+    name: Kör demo
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: 1. hello
+      run: echo "Hej användare!"
