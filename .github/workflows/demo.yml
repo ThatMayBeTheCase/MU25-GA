@@ -19,8 +19,8 @@ jobs:
            echo "Körs på repository: ${{ github.repository }}"
            echo "Trigger: ${{ github.event_name }}"
        
-       - name: checkout repo
-         uses: actions/checkout@v4
+       - name: 3. checkout repo
+         uses: actions/checkout@v7
 
        - name: 4. list files
          run: |
