@@ -11,5 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 1. hello
-        run: echo "Hej användare!"
+       - name: 1. hello
+         run: echo "Hej användare!"
+
+       - name: 2. Show enviroment
+         run:
+           echo "Körs på repository: ${{ github.repository }}"
+           echo "Trigger: ${{ github.event_name }}"
