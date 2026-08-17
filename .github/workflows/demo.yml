@@ -10,6 +10,6 @@ jobs:
     name: Kör demo
     runs-on: ubuntu-latest
 
-  steps:
-    - name: 1. hello
-      run: echo "Hej användare!"
+     steps:
+        - name: 1. hello
+          run: echo "Hej användare!"
