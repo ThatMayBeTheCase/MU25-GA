@@ -15,7 +15,7 @@ jobs:
 
       - name: 2. show enviroment
         run: |
-          echo "Repository: ${{ github.Repository }}"
+          echo "Repository: ${{ github.repository }}"
           echo "Trigger: ${{ github.event_name }}"
 
       - name: 3. checkout repo
@@ -23,3 +23,7 @@ jobs:
 
       - name: 4. List files
         run: ls -al
+
+      - name: 5. Kör kontroller
+        run: bash scripts/check.sh
+

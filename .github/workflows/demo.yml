@@ -27,3 +27,10 @@ jobs:
            ls -al
            cd .github/workflows
            ls -al
+
+       - name: 5. Kör Kontroller
+         run: bash scripts/check.sh
+
+       - name: 6. Visa projektinformation
+         run: bash scripts/project-info.sh
+
