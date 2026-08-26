@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo "Projektinformation"
-echo "------------------"
+
 
 repository="${GITHUB_REPOSITORY:-$(basename "$PWD")}"
 branch="${GITHUB_REF_NAME:-$(git branch --show-current)}"
